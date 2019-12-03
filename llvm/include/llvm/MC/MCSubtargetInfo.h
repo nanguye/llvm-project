@@ -149,7 +149,7 @@ public:
   /// the provided string, ignoring all other features.
   bool checkFeatures(StringRef FS) const;
 
-  ArrayRef<SubtargetFeatureKV> getCPUTable() const {
+  ArrayRef<SubtargetSubTypeKV> getCPUTable() const {
     return ProcDesc;
   }
 
