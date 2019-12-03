@@ -150,7 +150,7 @@ public:
   bool checkFeatures(StringRef FS) const;
 
   ArrayRef<SubtargetFeatureKV> getCPUTable() const {
-    return ProDesc;
+    return ProcDesc;
   }
 
   ArrayRef<SubtargetFeatureKV> getFeatureTable() const {
