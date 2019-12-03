@@ -149,6 +149,14 @@ public:
   /// the provided string, ignoring all other features.
   bool checkFeatures(StringRef FS) const;
 
+  ArrayRef<SubtargetFeatureKV> getCPUTable() const {
+    return ProDesc;
+  }
+
+  ArrayRef<SubtargetFeatureKV> getFeatureTable() const {
+    return ProcFeatures;
+  }
+
   /// Get the machine model of a CPU.
   const MCSchedModel &getSchedModelForCPU(StringRef CPU) const;
 
